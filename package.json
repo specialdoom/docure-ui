@@ -1,5 +1,5 @@
 {
-  "name": "docure-button",
+  "name": "@specialdoom/docure-button",
   "version": "0.0.1",
   "main": "dist/bundle.js",
   "description": "Button web component",
@@ -27,7 +27,11 @@
     "/dist"
   ],
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry":"https://npm.pkg.github.com/specialdoom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/specialdoom/docure-button"
   },
   "license": "ISC"
 }
