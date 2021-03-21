@@ -17,6 +17,7 @@
     border-radius: 4px;
     border: 1px solid transparent;
     cursor: pointer;
+    padding: 0 16px;
   }
 
   :host([primary]) {
