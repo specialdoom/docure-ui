@@ -1,6 +1,8 @@
 ### docure-button
 
-| npm i @specialdoom/docure-button
+```js
+npm i @specialdoom/docure-button
+```
 
 ### usage
 
