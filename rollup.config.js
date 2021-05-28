@@ -32,7 +32,7 @@ function serve() {
 
 export default {
 	input: 'src/main.js',
-	output: [{ file: pkg.main, format: 'umd', name: 'docure-button' }, {
+	output: [{ file: pkg.main, format: 'umd', name: 'docure-ui' }, {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
