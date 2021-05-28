@@ -1,24 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Assistant"
-      rel="stylesheet"
-    />
 
-    <title>Svelte app</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet" />
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="/global.css" />
+  <title>Svelte app</title>
 
-    <script defer src="/build/bundle.js"></script>
-  </head>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="global.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-  <body>
-    <docure-button primary>Primary</docure-button>
-    <docure-button secondary>Secondary</docure-button>
-    <docure-button link>Link</docure-button>
-  </body>
+  <script defer src="/build/bundle.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+  <strong>Docure UI - Use any of the following component</strong>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          docure-button
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <docure-button primary>Primary</docure-button>
+          <docure-button secondary>Secondary</docure-button>
+          <docure-button link>Link</docure-button>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          docure-header
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <docure-header>
+            <docure-header-item>
+              <a href="#">Nav item</a>
+            </docure-header-item>
+            <docure-header-item isright>
+              <a href="#">Nav right item</a>
+            </docure-header-item>
+          </docure-header>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+          docure-banner
+        </button>
+      </h2>
+      <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <docure-banner imagesrc="https://www.proofhub.com/wp-content/uploads/2021/01/Creative-project-managers.jpg">
+            <docure-banner-title text="Title"></docure-banner-title>
+            <docure-banner-content>Content</docure-banner-content>
+            <docure-banner-actions><button>Test</button></docure-banner-actions>
+          </docure-banner>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+          docure-list
+        </button>
+      </h2>
+      <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <docure-list>
+            <docure-list-item title="title" description="description">
+              <docure-button onClick="test()">Test button</docure-button>
+            </docure-list-item>
+            <docure-list-item title="title" description="description">
+              <docure-button onClick="test()">Test button</docure-button>
+            </docure-list-item>
+            <docure-list-item title="title" description="description">
+              <docure-button onClick="test()">Test button</docure-button>
+            </docure-list-item>
+          </docure-list>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+          docure-result
+        </button>
+      </h2>
+      <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <docure-result notfound></docure-result>
+          <docure-result unauthorized></docure-result>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-heading7">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+          docure-loading
+        </button>
+      </h2>
+      <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7"
+        data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <docure-loading></docure-loading>
+          <docure-loading text="Loading..."></docure-loading>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

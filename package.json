@@ -1,6 +1,6 @@
 {
   "name": "@specialdoom/docure-ui",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "main": "dist/bundle.js",
   "description": "Docure web components",
   "scripts": {
@@ -11,6 +11,13 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@specialdoom/docure-article-card": "0.0.1",
+    "@specialdoom/docure-banner": "0.0.3",
+    "@specialdoom/docure-button": "0.0.2",
+    "@specialdoom/docure-header": "0.0.2",
+    "@specialdoom/docure-list": "0.0.7",
+    "@specialdoom/docure-loading": "0.0.1",
+    "@specialdoom/docure-result": "0.0.1",
     "jest": "^26.6.3",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
