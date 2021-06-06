@@ -5,3 +5,5 @@ import '@specialdoom/docure-header';
 import '@specialdoom/docure-list';
 import '@specialdoom/docure-loading';
 import '@specialdoom/docure-result';
+import '@specialdoom/docure-article';
+import '@specialdoom/docure-recently-viewed';
